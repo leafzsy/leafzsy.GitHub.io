@@ -1,5 +1,5 @@
 # Jekyll configuration
-
+theme: jekyll-clean-dark
 name: zsyBlog
 description: Software Developer
 
