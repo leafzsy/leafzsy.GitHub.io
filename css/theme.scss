@@ -85,7 +85,7 @@ blockquote {
 }
 
 a {
-  color: #3CA2A2;
+  color: #8FD6B3;
 }
 
 //    ___          _      _   _ _      _
@@ -136,13 +136,13 @@ ul.social-media {
     animation: rss 1s ease-in-out forwards;
   }
 
-  @-webkit-keyframes github         {0% {color: white;} 50% {color: #333333;} 100% {color: #3CA2A2;}}
-  @-webkit-keyframes stack-overflow {0% {color: white;} 50% {color: #fe7a15;} 100% {color: #3CA2A2;}}
-  @-webkit-keyframes linkedin       {0% {color: white;} 50% {color: #4875B4;} 100% {color: #3CA2A2;}}
-  @-webkit-keyframes codepen        {0% {color: white;} 50% {color: #000000;} 100% {color: #3CA2A2;}}
-  @-webkit-keyframes instagram      {0% {color: white;} 50% {color: #517fa4;} 100% {color: #3CA2A2;}}
-  @-webkit-keyframes lastfm         {0% {color: white;} 50% {color: #c3000d;} 100% {color: #3CA2A2;}}
-  @-webkit-keyframes rss            {0% {color: white;} 50% {color: #FF6600;} 100% {color: #3CA2A2;}}
+  @-webkit-keyframes github         {0% {color: white;} 50% {color: #333333;} 100% {color: #8FD6B3;}}
+  @-webkit-keyframes stack-overflow {0% {color: white;} 50% {color: #fe7a15;} 100% {color: #8FD6B3;}}
+  @-webkit-keyframes linkedin       {0% {color: white;} 50% {color: #4875B4;} 100% {color: #8FD6B3;}}
+  @-webkit-keyframes codepen        {0% {color: white;} 50% {color: #000000;} 100% {color: #8FD6B3;}}
+  @-webkit-keyframes instagram      {0% {color: white;} 50% {color: #517fa4;} 100% {color: #8FD6B3;}}
+  @-webkit-keyframes lastfm         {0% {color: white;} 50% {color: #c3000d;} 100% {color: #8FD6B3;}}
+  @-webkit-keyframes rss            {0% {color: white;} 50% {color: #FF6600;} 100% {color: #8FD6B3;}}
 }
 
 //    ___        _
@@ -238,7 +238,7 @@ nav a {
   transition: all 0.4s ease;
 }
 nav.navbar {
-  border-top: 3px #3CA2A2 solid;
+  border-top: 3px #8FD6B3 solid;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
