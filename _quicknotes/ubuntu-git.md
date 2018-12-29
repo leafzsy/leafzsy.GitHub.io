@@ -1,5 +1,8 @@
 ---
 layout: post
+title:  "ubuntu"
+date:   2018-12-29 22:18
+comments: true
 tag: notes 
 ---
 
