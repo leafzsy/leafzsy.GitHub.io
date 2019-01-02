@@ -1,7 +1,7 @@
 # Jekyll configuration
 
 name: zsyBlog
-description: 
+description:
 
 url: https://leafzsy.github.io
 #url: http://localhost:4000
@@ -11,12 +11,14 @@ baseurl:
 
 social:
   github: leafzsy
-  stackoverflow: leafzsy
-  linkedin: leafzsy
-  codepen: leafzsy
-  instagram: leafzsy
-  lastfm: leafzsy
-  rss: feed.xml
+  twitter: Leafzsy
+  gmail: leaf.z.sy6@gmail.com
+  instagram: Zhao.ye6
+# stackoverflow: leafzsy
+#  linkedin:
+# codepen: leafzsy
+# lastfm: leafzsy
+#  rss: feed.xml
 
 share:
   facebook: true
