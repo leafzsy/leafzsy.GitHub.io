@@ -19,6 +19,19 @@
         {% endfor %}
       {% endfor %}
     {% endfor %}
+
+    {% assign quicknotes = site.quicknotes | sort: 'title' %}
+    {% for post in quicknotes %}
+      {% assign isAdded = false %}
+      {% for tagAll in post.tags %}
+        {% for tag in page.tags %}
+          {% if tagAll == tag and page.title != post.title and isAdded == false %}
+            <li><a href="{{ post.url | prepend: site.url }}">{{ post.title }}</a></li>
+            {% assign isAdded = true %}
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+    {% endfor %}
   </ul>
 </div>
 

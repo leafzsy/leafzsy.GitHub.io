@@ -3,7 +3,9 @@ layout: post
 title:  "ubuntu bash"
 date:   2018-12-29 22:18
 comments: true
-tag: notes
+tag: 
+- ubuntu
+- notes
 ---
 
 ##blog biulding
