@@ -47,3 +47,27 @@ wget {link}  #下载一个网页或网页资源
 curl -X POST -d "{key: value}" http://www.google.com  #发送一个 HTTP 请求到网站服务器
 find <directory>  #递归地列出所有目录和其子目录的内容
 ```
+
+
+## 高级&不常用的指令
+```bash
+lsof -i :8080  #列出打开文件的描述符（-i 是网络接口的标记）
+netstat | head -n20  #列出当前打开的 Internet/UNIX 接口（socket）以及相关信息
+dstat -a  #输出当前硬盘、网络、CPU 活动等信息
+nslookup <IP address>  #找到远程 IP 地址的主机名
+strace -f -e <syscall> <cmd>  #跟踪程序的系统调用（-e 标记用于过滤某些系统调用）
+ps aux | head -n20  #输出目前活动的进程
+file <file>  #检查文件类型（例如可执行文件、二进制文件、ASCII 文本文件）
+uname -a  #内核信息
+lsb_release -a  #系统信息
+hostname  #检视你的机器的主机名（即其他电脑可以搜索到的名称）
+pstree  #可视化分支进程
+time <cmd>  #执行一个命令并报告用时
+CTRL + z ; bg; jobs; fg  #从当前 tty 中传递一个进程到后台再返回前台
+cat file.txt | xargs -n1 | sort | uniq -c  #统计文件中的独特字（unique words）数量
+wc -l <file>  #计算文件的行数
+du -ha  #在磁盘上显示目录及其内容的大小
+zcat <file.gz>  #显示压缩文本文件的内容
+scp <user@remote_host> <local_path>  #将文件从远端复制到本地服务器，或反过来
+man {command}  #为一个命令显示 manual（说明文档），但是通常这样不如谷歌搜索好用
+```
