@@ -10,7 +10,11 @@ tag:
 
 ## blog biulding
 ```bash
+<<<<<<< HEAD
 bundle exec jekyll serve
+=======
+bundle exec jekyll serve 
+>>>>>>> ccb357cb0af86e43c77b991f1a5441a47eba9ae0
 ```
 
 ## git
@@ -20,6 +24,7 @@ git add -u
 git commit -m "new"
 git push origin master
 ```
+<<<<<<< HEAD
 
 ## CS231N虚拟环境搭建
 ```bash
@@ -28,6 +33,8 @@ jupyter notebook #run
 deactivate #stop
 ```
 
+=======
+>>>>>>> ccb357cb0af86e43c77b991f1a5441a47eba9ae0
 ## 常用
 ```bash
 cd {directory}  #转换当前目录
@@ -79,5 +86,8 @@ zcat <file.gz>  #显示压缩文本文件的内容
 scp <user@remote_host> <local_path>  #将文件从远端复制到本地服务器，或反过来
 man {command}  #为一个命令显示 manual（说明文档），但是通常这样不如谷歌搜索好用
 ```
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> ccb357cb0af86e43c77b991f1a5441a47eba9ae0
