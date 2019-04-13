@@ -82,4 +82,25 @@ scp <user@remote_host> <local_path>  #将文件从远端复制到本地服务器
 man {command}  #为一个命令显示 manual（说明文档），但是通常这样不如谷歌搜索好用
 ```
 
+## git fetch和git pull的区别
+
+1. git fetch：相当于是从远程获取最新版本到本地，不会自动合并。
+```bash
+git fetch origin master
+git log -p master..origin/master
+git merge origin/master
+```
+首先从远程的origin的master主分支下载最新的版本到origin/master分支上然后比较本地的master分支和origin/master分支的差别最后进行合并.上述过程其实可以用以下更清晰的方式来进行：
+```bash
+git fetch origin master:tmp
+git diff tmp 
+git merge tmp
+```
+2. git pull：相当于是从远程获取最新版本并merge到本地 
+```bash
+git pull origin master
+```
+原文出自【易百教程】，原文链接：https://www.yiibai.com/git/git_fetch.html
+
+
 
