@@ -16,4 +16,20 @@ x.flatten()
 ##排名索引
 numpy.argsort(x)
 
+##前k个
+x[:k]
+
+##0到max的计数
+numpy.bincount(x)
+
+##max的索引
+numpy.argmax(x)
+
+##每个的平方
+x ** 2
+numpy.square(x)
+
+##矩阵点乘
+numpy.dot(x,y)
+
 ```
