@@ -14,4 +14,9 @@ firstname = 'Christopher Arthur Hansen Brooks'.split(' ')[0] # [0] selects the f
 lastname = 'Christopher Arthur Hansen Brooks'.split(' ')[-1] # [-1] selects the last element of the list
 print(firstname)
 print(lastname)
+
+Christopher
+Brooks
+
 ```
+<iframe src="https://github.com/leafzsy/leafzsy.github.io/blob/master/images/ipynb/week1.ipynb" width="850" height="500"></iframe>
