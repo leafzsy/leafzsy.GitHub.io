@@ -19,4 +19,4 @@ Christopher
 Brooks
 
 ```
-<iframe src="https://github.com/leafzsy/leafzsy.github.io/blob/master/images/ipynb/week1.ipynb" width="850" height="500"></iframe>
+<iframe src="http://nbviewer.jupyter.org/url/jakevdp.github.com/downloads/notebooks/XKCD_plots.ipynb" width="600" height="10000"></iframe>
