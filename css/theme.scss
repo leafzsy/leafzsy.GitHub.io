@@ -275,7 +275,7 @@ nav.shrink .navbar-toggle {
 //   |_|\___/\___/\__\___|_|
 //
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   .twoRow .navbar-collapse {
     clear: left;
   }
@@ -483,8 +483,8 @@ figure.in-list {
 }
 
 table.wide {
-  width: 150%;
-  max-width: 150%;
+  width: 100%;
+  max-width: 100%;
 }
 
 table.inner-borders {
