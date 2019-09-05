@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "python"
+title:  "python_notes"
 date:   2018-12-29 22:18
 comments: true
 tag:
@@ -19,4 +19,4 @@ Christopher
 Brooks
 
 ```
-<iframe src="http://nbviewer.jupyter.org/url/jakevdp.github.com/downloads/notebooks/XKCD_plots.ipynb" width="600" height="10000"></iframe>
+<iframe src="https://nbviewer.jupyter.org/github/leafzsy/leafzsy.github.io/blob/master/images/ipynb/week1.ipynb" width="700" height="1000"></iframe>
