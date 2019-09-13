@@ -40,12 +40,12 @@ h6 { font-size: .75em; }
 .sidebar h2 {
   margin-top: .7em;
   line-height: 1em;
-  margin-left: 6em;//zsy add
+  margin-left: 8em;//zsy add
 }
 .sidebar li {
   margin-top: .7em;
   line-height: 1em;
-  margin-left: 8em;//zsy add
+  margin-left: 11em;//zsy add
 }
 
 ul.sideBarTags {
@@ -61,14 +61,14 @@ ul.sideBarTags {
 
 .well {
   background-color: #39393a;
-  min-width: 130%;
+  min-width: 138%;
   margin-left: -6em;//zsy add
   box-shadow: 0 0 0 0, 0px 8px 16px rgba(0, 0, 0, 0.2);
   border: 0;
   border-radius: 6px;
 }
 .well h1 {
-  color: #ddd;
+  color: yellow;
 }
 .well h1:first-child, h3:first-child{
   margin-top: 5px;
@@ -218,7 +218,7 @@ a.page:hover, a.page.gradient:hover {
 a.page.active {
   border: none;
   background: #2f3237;
-  box-shadow: inset 0px 0px 50px rgba(0,0,0, .5), 0px 1px 0px rgba(255,255,255, .1);
+  box-shadow: inset 0px 0px 8px rgba(0,0,0, .5), 0px 1px 0px rgba(255,255,255, .1);
 }
 
 
