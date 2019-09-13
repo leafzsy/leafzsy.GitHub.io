@@ -63,7 +63,7 @@ h1, h2, h3, h4 {
   border-bottom: 1px solid black;
   /*  border-top: 1px solid black;*/
   top: 0;
-  width: 200px;
+  width: 20px;
 }
 .section span:before {
   right: 100%;
