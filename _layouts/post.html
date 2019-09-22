@@ -4,7 +4,7 @@
   <div class="content">
     <div class="container container-center">
       <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-10">
           <div class="article">
             <div class="well">
               <h2><a href="{{ site.url }}{{ page.url }}">{{ page.title }}</a></h2>
@@ -12,9 +12,10 @@
                 <div class="post-time">
                   <i class="fa fa-calendar"></i>
                   <time>{{ page.date | date_to_string }}</time>
-		 <span id="busuanzi_container_page_pv">
-		  &nbsp<i class="fa fa-eye"></i>阅读量<span id="busuanzi_value_page_pv"></span>次
-		</span>
+		  <span id="busuanzi_container_page_pv">
+		   &nbsp<i class="fa fa-eye"></i>阅读量<span id="busuanzi_value_page_pv"></span>次
+		  </span>
+
                 </div>
                 <ul>
                   {% for tag in page.tags %}
@@ -22,6 +23,7 @@
                   {% endfor %}
                 </ul>
               </div>
+
               <div class="post-content">
                 {{ content }}
               </div>
@@ -35,7 +37,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4 hidden-xs">
+        <div class="col-md-2 hidden-xs">
           {% include sidebar.html %}
         </div>
       </div>
