@@ -11,7 +11,7 @@ tag:
 ## python base
 <iframe src="https://nbviewer.jupyter.org/github/leafzsy/leafzsy.github.io/blob/master/images/ipynb/python_week1_notes.ipynb" width="100%" height="600" marginheight="0" marginwidth="0" frameborder="0"></iframe>
 
-## 记背小节
+### 函数记背小节一
 - x.split(' ')  #通过制定分隔符，进行分割
 - x.formart(x) #在string插入变量 
 - with open('mpg.csv') as csvfile:
@@ -38,5 +38,22 @@ tag:
 - zip(a,b) #把a、b打包为元组的列表，类型为zip
 
 ## pandas
+<iframe src="https://nbviewer.jupyter.org/github/leafzsy/leafzsy.github.io/blob/master/images/ipynb/week2_notes.ipynb" width="100%" height="600" marginheight="0" marginwidth="0" frameborder="0"></iframe>
+
+### 函数记背小节二
+```python
+%%timeit -n 100  # jupyter 中的测量代码块时间
+Series.iloc[3]  # 等同于 Series[3]
+Series.loc['Golf'] # 等同于 Series['Golf']
+Series.drop('a')  # 除了行名index是‘a’的
+pd.read_csv('a.csv', index_col=0, skiprows=1 )  # index_col 可选择哪一列为index ; skiprows 可选择从哪一行开始读取。
+DataFrame.rename(index={old_name1: new_name2}, columns={old_name2: new_name2,old_name3: new_name3}, inplace=True) #columns 列; inplace 如果是true 则不进行copy，直接在DataFrame上更改.
+DataFrame.dropna()  # 返回一个去掉存在nan行的DataFrame
+DataFrame.set_index('Gold')  # 改变index列
+DataFrame.reset_index()  # 回到初始index列
+DataFrame['SUMLEV'].unique()  # 返回一列中不同的值
+DataFrame.fillna(method='ffill')  # 向下传播值，补全nan
+DataFrame.fillna({'A': 0, 'B': 1, 'C': 2, 'D': 3}, limit=1)  #只补全第一行
+``` 
 
 
