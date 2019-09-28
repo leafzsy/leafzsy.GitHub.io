@@ -38,7 +38,7 @@ tag:
 - zip(a,b) #把a、b打包为元组的列表，类型为zip
 
 ## pandas
-<iframe src="https://nbviewer.jupyter.org/github/leafzsy/leafzsy.github.io/blob/master/images/ipynb/week2_notes.ipynb" width="100%" height="600" marginheight="0" marginwidth="0" frameborder="0"></iframe>
+<iframe src="https://github.com/leafzsy/leafzsy.github.io/blob/master/images/ipynb/week2_notes.ipynb" width="100%" height="600" marginheight="0" marginwidth="0" frameborder="0"></iframe>
 
 ### 函数记背小节二
 ```python
