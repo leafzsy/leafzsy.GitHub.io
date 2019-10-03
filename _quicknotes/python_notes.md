@@ -56,4 +56,18 @@ DataFrame.fillna(method='ffill')  # 向下传播值，补全nan
 DataFrame.fillna({'A': 0, 'B': 1, 'C': 2, 'D': 3}, limit=1)  #只补全第一行
 ``` 
 
+## pandas 作业
+<iframe src="https://nbviewer.jupyter.org/github/leafzsy/leafzsy.github.io/blob/master/images/ipynb/Assignment2.ipynb" width="100%" height="600" marginheight="0" marginwidth="0" frameborder="0"></iframe>
+
+```python
+df['Gold'].idxmax()  # 返回最大值index
+df['Points']  # 选取 'Points' 列
+census_df[['STNAME','one']].set_index('STNAME').sum(level='STNAME')['one'].idxmax()  # 算出每个相同的 STNAME 的和，并找出求和后 one 中最大的index
+df.sort_values(by=['STNAME','CENSUS2010POP'], ascending = False)  # 按先后倒序排列
+state_top = pd.DataFrame(columns=['CENSUS2010POP'])  # 创建空 DataFrame
+state_top.loc[state] = 1  # 添加或更改行
+df7.max(axis = 1)  # 每行的最大值
+(census_df['REGION']==1) | (census_df['REGION']==2)  # 要加括号
+df8[df8['CTYNAME'].str.contains('Washington')]  # Series.str.contains(self, pat, case=True, flags=0, na=nan, regex=True) 包含string
+```
 

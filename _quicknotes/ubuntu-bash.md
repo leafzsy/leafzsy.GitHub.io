@@ -28,7 +28,11 @@ source .env/bin/activate #open
 jupyter notebook #run
 deactivate #stop
 ```
+## 远程连接
+- ssh 用户名@IP地址 -p 端口号
 
+## 拨号连接
+- sudo pppoeconf
 
 ## 常用
 ```bash
