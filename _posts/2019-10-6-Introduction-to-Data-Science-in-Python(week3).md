@@ -13,7 +13,7 @@ tag:
 <iframe src="https://nbviewer.jupyter.org/github/leafzsy/leafzsy.github.io/blob/master/images/ipynb/week3_notes.ipynb" width="100%" height="600" marginheight="0" marginwidth="0" frameborder="0"></iframe>
 
 ### 记背小节
-```python3
+```python
 #还原为数字索引
 df.reset_index()
 #how='outer' 匹配index合并，包含2表所有的index;'inner' 只包含2表重复的index;'left' 左连接，包含左边表的所有index.
@@ -22,5 +22,50 @@ pd.merge(x_df,y_df,how='outer',left_index=True,right_index=True)
 pd.merge(x_df, y_df, how='left', left_on=['First Name','Last Name'], right_on=['First Name','Last Name']) 
 # 对函数按行或按列批量处理
 df.apply(min_max, axis=1)
+# groupby对组进行循环
+for group, frame in df.groupby('STNAME'):
+  avg = np.average(frame['CENSUS2010POP'])
+# groupby对组进行函数算法
+df[['STNAME','CENSUS2010POP']].groupby(['STNAME']).mean()
+# 按照fun分组
+for group, frame in df.groupby(fun):
+# DataFrame.agg(self, func, axis=0, *args, **kwargs) 对指定行列或多项求函数
+df.groupby('STNAME').agg({'CENSUS2010POP': np.average})
+# 改列名
+df.rename(columns={0: 'Grades'}, inplace=True)
+# 转化为类别数据类型'category'，可设置类别大小
+grades = df['Grades'].astype('category',
+         categories=['D', 'D+', 'C-', 'C', 'C+', 'B-', 'B', 'B+', 'A-', 'A', 'A+'],
+         ordered=True)
+# 对avg分成10组，类别属性是范围
+pd.cut(df['avg'],10)
+# labels 3个级别的名字
+pd.cut(s, 3, labels=['Small', 'Medium', 'Large'])
+# 数据透视表
+df.pivot_table(values='(kW)', index='YEAR', columns='Make', aggfunc=[np.mean,np.min], margins=True)
+# 时间数据类型
+pd.Timestamp('9/1/2016 10:05AM')
+pd.Period('1/2016')
+pd.Period('3/5/2016')
+# string转化为 datetime
+pd.to_datetime(ts3.index)
+# Timedelta 时间间隔
+pd.Timestamp('9/2/2016 8:10AM') + pd.Timedelta('12D 3H')
+# 输出为 Timedelta
+pd.Timestamp('9/3/2016')-pd.Timestamp('9/1/2016')
+# 每两周一天，从2016-10-01开始的9天
+pd.date_range('10-01-2016', periods=9, freq='2W-SUN')
+# 返回日期的星期
+df.index.weekday_name
+#返回与上一行的差异
+df.diff()
+# 按月求平均
+df.resample('M').mean()
+# 2017年的行
+df['2017']
+# 2016-12以后的
+df['2016-12':]
+# 按照间隔天数向下填充值
+df.asfreq(freq='6D', method='ffill')
 ```
 
