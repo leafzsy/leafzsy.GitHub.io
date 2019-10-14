@@ -1,14 +1,18 @@
 ---
 layout: post
-title:  "python_notes"
-date:   2019-9-11 16:00
+title:  "Introduction to Data Science in Python(week12)"
+date:   2019-10-3 19:45
+description: from "https://www.coursera.org/learn/python-data-analysis?"
 comments: true
+share: true
 tag:
 - python3
-- notes
 ---
 
-## base记背小节一
+## python base
+<iframe src="https://nbviewer.jupyter.org/github/leafzsy/leafzsy.github.io/blob/master/images/ipynb/python_week1_notes.ipynb" width="100%" height="600" marginheight="0" marginwidth="0" frameborder="0"></iframe>
+
+### 函数记背小节一
 - x.split(' ')  #通过制定分隔符，进行分割
 - x.formart(x) #在string插入变量 
 - with open('mpg.csv') as csvfile:
@@ -34,7 +38,10 @@ tag:
 - np.random.randint(0, 10, (4,3)) #生成范围0-10的int随机数组
 - zip(a,b) #把a、b打包为元组的列表，类型为zip
 
-## pandas函数记背小节二
+## pandas
+<iframe src="https://nbviewer.jupyter.org/github/leafzsy/leafzsy.github.io/blob/master/images/ipynb/week2_notes.ipynb" width="100%" height="600" marginheight="0" marginwidth="0" frameborder="0"></iframe>
+
+### 函数记背小节二
 ```python
 %%timeit -n 100  # jupyter 中的测量代码块时间
 Series.iloc[3]  # 等同于 Series[3]
@@ -50,7 +57,10 @@ DataFrame.fillna(method='ffill')  # 向下传播值，补全nan
 DataFrame.fillna({'A': 0, 'B': 1, 'C': 2, 'D': 3}, limit=1)  #只补全第一行
 ``` 
 
-## pandas记背小节三
+## pandas 作业
+<iframe src="https://nbviewer.jupyter.org/github/leafzsy/leafzsy.github.io/blob/master/images/ipynb/Assignment2.ipynb" width="100%" height="600" marginheight="0" marginwidth="0" frameborder="0"></iframe>
+
+### 记背小节三
 ```python
 df['Gold'].idxmax()  # 返回最大值index
 df['Points']  # 选取 'Points' 列
@@ -62,4 +72,3 @@ df7.max(axis = 1)  # 每行的最大值
 (census_df['REGION']==1) | (census_df['REGION']==2)  # 要加括号
 df8[df8['CTYNAME'].str.contains('Washington')]  # Series.str.contains(self, pat, case=True, flags=0, na=nan, regex=True) 包含string
 ```
-
