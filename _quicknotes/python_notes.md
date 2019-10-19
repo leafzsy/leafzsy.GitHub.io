@@ -10,7 +10,7 @@ tag:
 
 ## base记背小节一
 - x.split(' ')  #通过制定分隔符，进行分割
-- x.formart(x) #在string插入变量 
+- x.formart(x) #在string插入变量
 - with open('mpg.csv') as csvfile:
     mpg = list(csv.DictReader(csvfile)) #打开csv
 - x.keys() #表头
@@ -48,7 +48,7 @@ DataFrame.reset_index()  # 回到初始index列
 DataFrame['SUMLEV'].unique()  # 返回一列中不同的值
 DataFrame.fillna(method='ffill')  # 向下传播值，补全nan
 DataFrame.fillna({'A': 0, 'B': 1, 'C': 2, 'D': 3}, limit=1)  #只补全第一行
-``` 
+```
 
 ## pandas记背小节三
 ```python
@@ -70,7 +70,7 @@ df.reset_index()
 #how='outer' 匹配index合并，包含2表所有的index;'inner' 只包含2表重复的index;'left' 左连接，包含左边表的所有index.
 pd.merge(x_df,y_df,how='outer',left_index=True,right_index=True)
 #left_on='Name' 左右表匹配的列名columns; 出现重名columns,都保留
-pd.merge(x_df, y_df, how='left', left_on=['First Name','Last Name'], right_on=['First Name','Last Name']) 
+pd.merge(x_df, y_df, how='left', left_on=['First Name','Last Name'], right_on=['First Name','Last Name'])
 # 对函数按行或按列批量处理
 df.apply(min_max, axis=1)
 # groupby对组进行循环
@@ -118,4 +118,20 @@ df['2017']
 df['2016-12':]
 # 按照间隔天数向下填充值
 df.asfreq(freq='6D', method='ffill'
+```
+
+### Assignment 3记背小节
+```python
+# skiprows 开始跳过行数; skipfooter 末尾跳过行数
+energy = pd.read_excel("Energy Indicators.xls",skiprows = 18,usecols =[2,3,4,5],header = None,skipfooter = 38,
+                       names = ['Country', 'Energy Supply', 'Energy Supply per Capita', '% Renewable'])
+# r' ' 正则匹配
+df.str.replace(r'[0-9]+', '')
+df.str.replace(r' \(.+\)', '')
+
+# dataframe加上一个series,按照index匹配
+Top15['continent'] = pd.Series(ContinentDict)
+
+# 批量把数字改成带千分位string
+Top15['PopEst'].map(lambda x:format(x,','))
 ```

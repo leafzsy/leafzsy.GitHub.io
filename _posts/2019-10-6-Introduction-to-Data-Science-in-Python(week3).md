@@ -19,7 +19,7 @@ df.reset_index()
 #how='outer' 匹配index合并，包含2表所有的index;'inner' 只包含2表重复的index;'left' 左连接，包含左边表的所有index.
 pd.merge(x_df,y_df,how='outer',left_index=True,right_index=True)
 #left_on='Name' 左右表匹配的列名columns; 出现重名columns,都保留
-pd.merge(x_df, y_df, how='left', left_on=['First Name','Last Name'], right_on=['First Name','Last Name']) 
+pd.merge(x_df, y_df, how='left', left_on=['First Name','Last Name'], right_on=['First Name','Last Name'])
 # 对函数按行或按列批量处理
 df.apply(min_max, axis=1)
 # groupby对组进行循环
@@ -69,3 +69,18 @@ df['2016-12':]
 df.asfreq(freq='6D', method='ffill')
 ```
 
+### Assignment 3记背小节
+```python
+# skiprows 开始跳过行数; skipfooter 末尾跳过行数
+energy = pd.read_excel("Energy Indicators.xls",skiprows = 18,usecols =[2,3,4,5],header = None,skipfooter = 38,
+                       names = ['Country', 'Energy Supply', 'Energy Supply per Capita', '% Renewable'])
+# r' ' 正则匹配
+df.str.replace(r'[0-9]+', '')
+df.str.replace(r' \(.+\)', '')
+
+# dataframe加上一个series,按照index匹配
+Top15['continent'] = pd.Series(ContinentDict)
+
+# 批量把数字改成带千分位string
+Top15['PopEst'].map(lambda x:format(x,','))
+```
