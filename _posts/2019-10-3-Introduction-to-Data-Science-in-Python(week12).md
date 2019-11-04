@@ -10,7 +10,7 @@ tag:
 ---
 
 ## python base
-<iframe src="https://nbviewer.jupyter.org/github/leafzsy/leafzsy.github.io/blob/master/images/ipynb/python_week1_notes.ipynb" width="100%" height="600" marginheight="0" marginwidth="0" frameborder="0"></iframe>
+<iframe src="https://nbviewer.jupyter.org/github/leafzsy/leafzsy.github.io/blob/master/images/Introduction to Data Science in Python/python_week1_notes.ipynb" width="100%" height="600" marginheight="0" marginwidth="0" frameborder="0"></iframe>
 
 ### 函数记背小节一
 - x.split(' ')  #通过制定分隔符，进行分割
@@ -39,7 +39,7 @@ tag:
 - zip(a,b) #把a、b打包为元组的列表，类型为zip
 
 ## pandas
-<iframe src="https://nbviewer.jupyter.org/github/leafzsy/leafzsy.github.io/blob/master/images/ipynb/week2_notes.ipynb" width="100%" height="600" marginheight="0" marginwidth="0" frameborder="0"></iframe>
+<iframe src="https://nbviewer.jupyter.org/github/leafzsy/leafzsy.github.io/blob/master/images/Introduction to Data Science in Python/week2_notes.ipynb" width="100%" height="600" marginheight="0" marginwidth="0" frameborder="0"></iframe>
 
 ### 函数记背小节二
 ```python
