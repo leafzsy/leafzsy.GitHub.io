@@ -47,6 +47,7 @@ comments: true
 
 permalink: /:year/:month/:title/
 gems: [jekyll-paginate]
+##plugins: [jekyll-paginate]
 paginate: 10
 
 #highlighter: rouge
