@@ -17,14 +17,25 @@ tag:
 ### Second week
 - 混淆矩阵（confusion matrix）
 
-|         |               | 预测类别          |
+|         |              | Test Classification  Y
 |  ---- |   :-----:  | :---------:  | :----: |
-|         |               |  真            |  假     |
-|真实类别 | 阳性  |  真阳性TP  |  假阳性FP |
-|         | 阴性  |  假阴性FN  |  真阴性TN |
+|         |               |  positive |  negative  |
+| Condition | +阳性  |  真阳性TP  |  假阳性FN |
+| X        | -阴性  |  假阴性FP  |  真阴性TN |
 {:.inner-borders}
+	
+![My helpful screenshot]({{ site.url }}/images/notes/Confusion Matrix.png){:.center-image}
 
+- Does the change in threshold change the test's Area under the ROC Curve? Use logic - no need to calculate any numbers.(no)
+···
+阈值的变化是否会改变ROC曲线下的测试面积？使用逻辑-无需计算任何数字。（不会）
+···
+- Points on the ROC curve represent the false positive rate and true positive rate at each possible threshold. Changing the threshold signifies a different point on the ROC Curve, but does not change the overall shape of the curve.
+···
+ROC曲线上的点代表每个可能阈值处的假阳性率和真阳性率。更改阈值表示ROC曲线上的其他点，但不会更改曲线的整体形状
+···
 
+### Third week
 
 
 
