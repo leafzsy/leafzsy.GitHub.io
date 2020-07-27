@@ -24,20 +24,30 @@ tag:
 | X        | -阴性  |  假阴性FP  |  真阴性TN |
 {:.inner-borders}
 	
-![My helpful screenshot]({{ site.url }}/images/notes/Confusion Matrix.png){:.center-image}
+![Confusion Matrix]({{ site.url }}/images/notes/Confusion Matrix.png){:.center-image}
 
 - Does the change in threshold change the test's Area under the ROC Curve? Use logic - no need to calculate any numbers.(no)
-···
-阈值的变化是否会改变ROC曲线下的测试面积？使用逻辑-无需计算任何数字。（不会）
-···
+>阈值的变化是否会改变ROC曲线下的测试面积？使用逻辑-无需计算任何数字。（不会）
+
 - Points on the ROC curve represent the false positive rate and true positive rate at each possible threshold. Changing the threshold signifies a different point on the ROC Curve, but does not change the overall shape of the curve.
-···
-ROC曲线上的点代表每个可能阈值处的假阳性率和真阳性率。更改阈值表示ROC曲线上的其他点，但不会更改曲线的整体形状
-···
+>ROC曲线上的点代表每个可能阈值处的假阳性率和真阳性率。更改阈值表示ROC曲线上的其他点，但不会更改曲线的整体形状
 
 ### Third week
+- 熵（entropy），不确定性的量度，因为越随机的信源的熵越大。
 
+![entropy_chart]({{ site.url }}/images/notes/entropy_chart.png){:.center-image}
+#### 错题
 
+![entropy]({{ site.url }}/images/notes/entropy.png){:.center-image}
+
+1. What is the remaining uncertainty or entropy of the test classification if we learn a chip is truly defective?（1bit）
+>如果芯片确实有缺陷，那么测试分类的剩余不确定性或熵是多少？
+
+2. What is the remaining uncertainty, or entropy, of the Test Classification, if we know that a chip is not-defective?（0.8113bit）
+>如果芯片确实没有缺陷，那么测试分类的剩余不确定性或熵是多少？
+
+3. What is the expected, or average, uncertainty or entropy, remaining regarding a Test Outcome, give knowledge of whether or not a chip is defective?（0.8490bit）
+>关于测试结果，剩余多少预期或平均的不确定性熵能使您知道芯片是否有缺陷吗？
 
 ## Data Visualization and Communication with Tableau
 - SMART原则中的五个字母分别对应了五个英文单词：Specific（明确）、Measurable（可衡量）、Achievable（可达成）、Relevant（相关）和Time-bound（有时限）。
