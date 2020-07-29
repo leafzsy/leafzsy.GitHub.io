@@ -36,6 +36,9 @@ tag:
 - 熵（entropy），不确定性的量度，因为越随机的信源的熵越大。
 
 ![entropy_chart]({{ site.url }}/images/notes/entropy_chart.png){:.center-image}
+
+- 条件概率（conditional probability），P(A|B)*P(B)=P(AB), P(A)=P(AB)+P(A~B), P(B)+P(~B)=1
+- 贝叶斯定理（Bayes' theorem），P(A|B)*P(B)=P(B|A)*P(A)
 #### 错题
 
 ![entropy]({{ site.url }}/images/notes/entropy.png){:.center-image}
