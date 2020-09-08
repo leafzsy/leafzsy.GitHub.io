@@ -60,3 +60,14 @@ tag:
 - 标准分数可借由以下公式求出：z=(x-μ)/σ，其中σ≠0。
 
 - 函数stdev的根号里面的分母是n-1,而stdevp是n，如果是抽样当然用stdev。
+
+- 任何高斯连续概率分布的熵（entropy）=2.05 + log2(σ)
+- Percentage Information Gain（信息增益率） = -log2(SQRT(1-R-squared ))/2.05 ，其中R-squared是相关系数Correlation R的平方，2.05是熵（entropy）。
+- 1=R^2+(error)^2=R^2+σ^2，其中error是均方根误差（标准偏差）
+
+- 标准化后，回归线的斜率β将等于x和y的相关性。
+
+- 线性回归（linear regression）是利用称为线性回归方程的最小二乘函数对一个或多个自变量和因变量之间关系进行建模的一种回归分析。
+- 最小二乘法（least squares method），又称最小平方法，是一种数学优化建模方法。它通过最小化误差的平方和寻找数据的最佳函数匹配。以下例子来自维基
+
+![entropy]({{ site.url }}/images/notes/least-squares.png){:.center-image}
