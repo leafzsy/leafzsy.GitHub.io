@@ -63,7 +63,7 @@ tag:
 
 - 任何高斯连续概率分布的熵（entropy）=2.05 + log2(σ)
 - Percentage Information Gain（信息增益率） = -log2(SQRT(1-R-squared ))/2.05 ，其中R-squared是相关系数Correlation R的平方，2.05是熵（entropy）。
-- 1=R^2+(error)^2=R^2+σ^2，其中error是均方根误差（标准偏差）
+- 1=R^2+(error)^2=R^2+σ^2，其中error是均方根误差（标准偏差）= σ1/σ2
 
 - 标准化后，回归线的斜率β将等于x和y的相关性。
 
@@ -71,3 +71,9 @@ tag:
 - 最小二乘法（least squares method），又称最小平方法，是一种数学优化建模方法。它通过最小化误差的平方和寻找数据的最佳函数匹配。以下例子来自维基
 
 ![entropy]({{ site.url }}/images/notes/least-squares.png){:.center-image}
+
+- 中心极限定理说明，在适当的条件下，大量相互独立随机变量的均值经适当标准化后依分布收敛于正态分布。这组定理是数理统计学和误差分析的理论基础，指出了大量随机变量之和近似服从正态分布的条件。
+> 一组“ n”个项目的样本均值的标准偏差与基础总体x的标准偏差（在这种情况下，“种群”具有单独的模型误差）相关，则样本均值的标准差是 x / sqrt( n )。
+
+- 协方差定义为 R*Std.Dev(1)*Std.Dev(2).
+
