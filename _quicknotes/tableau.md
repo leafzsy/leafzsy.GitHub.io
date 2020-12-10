@@ -1,9 +1,10 @@
 ---
 layout: post
 title:  "Data Visualization and Communication with Tableau"
-date:   2020-5-27 16:22
+date:   2020-10-27 16:22
 comments: true
 tag:
+- Tableau
 - notes
 ---
 
