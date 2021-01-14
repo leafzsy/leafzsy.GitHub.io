@@ -10,7 +10,7 @@ tag:
 ---
 
 ## Distributions in Pandas
-<iframe src="https://nbviewer.jupyter.org/github/leafzsy/leafzsy.github.io/blob/master/images/Introduction to Data Science in Python/Week+4.ipynb" width="100%" height="600" marginheight="0" marginwidth="0" frameborder="0"></iframe>
+ [week4](https://github.com/leafzsy/leafzsy.github.io/blob/master/images/Introduction%20to%20Data%20Science%20in%20Python/Week_4.ipynb)
 
 ## week4 记背小节
 ```python
