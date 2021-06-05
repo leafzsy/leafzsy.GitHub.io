@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "数据库系统概念学习笔记(一)"
+title:  "数据库系统概念"
 date:   2019-1-4 19:00
 description: (第六版)第一章--from "Database System Concepts" Avi Silberschatz, Henry F. Korth, S. Sudarshan
 comments: true
