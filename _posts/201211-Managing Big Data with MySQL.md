@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Managing Big Data with MySQL                                                 "
+title:  "Managing Big Data with MySQL"
 date:   2020-12-11 17:02
 comments: true
 tag:
@@ -50,6 +50,5 @@ SELECT DISTINCT breed, TRIM(LEADING '-' FROM breed) AS breed_fixed
 FROM dogs
 ORDER BY breed
 LIMIT 100
-
-
 ```
+

@@ -1,40 +1,49 @@
 ---
 layout: post
-title:  "python_notes"
-date:   2019-9-11 16:00
+title:  "Introduction to Data Science in Python"
+date:   2019-10-3 19:45
+description: from "https://www.coursera.org/learn/python-data-analysis?"
 comments: true
+share: true
 tag:
 - python3
 - notes
 ---
 
-## base记背小节一
-- x.split(' ')  #通过制定分隔符，进行分割
-- x.formart(x) #在string插入变量
-- with open('mpg.csv') as csvfile:
-    mpg = list(csv.DictReader(csvfile)) #打开csv
-- x.keys() #表头
-- x.append(a) #列表末尾添加元素
-- dt.datetime.fromtimestamp(tm.time()).year #当前年(datetime as dt, time as tm)
--  dt.timedelta(days = 100) # 100天，可与时间加减
-- map(fun, iter) # 循环列表执行函数
-- x.shape # x的(行, 列)
-- numpy.arange(start, stop, step, dtype) #创建一个间隔为step的1维数组ndarray
-- np.linspace(0, 4, 9) # 生成9个元素的等差ndarray
-- n.reshape(3, 5) # 返回重排列的数组
-- n.rasize(3, 5) # 直接改变数据n的排列
-- np.repeat([1,2,3],3) #数组每个元素按顺序扩展到3个
-- np.vstack([p, 2*p]) #对应行连接
-- np.hstack([p, 2*p]) #对应列连接
-- z = z.astype('f') #改变数据类型
-- z.stype() #返回数据类型
-- a.argmax()  #返回最大值索引
-- s[-5::-2] #返回索引从-5开始-2的数
-- r[-1, ::2] #返回-1行，索引从0开始+2的数
-- np.random.randint(0, 10, (4,3)) #生成范围0-10的int随机数组
-- zip(a,b) #把a、b打包为元组的列表，类型为zip
+## week1-python base
+<iframe src="https://nbviewer.jupyter.org/github/leafzsy/leafzsy.github.io/blob/master/images/Introduction to Data Science in Python/python_week1_notes.ipynb" width="100%" height="600" marginheight="0" marginwidth="0" frameborder="0"></iframe>
 
-## pandas函数记背小节二
+#### 函数记背小节一
+```python
+x.split(' ')  #通过制定分隔符，进行分割
+x.formart(x) #在string插入变量 
+with open('mpg.csv') as csvfile:
+    mpg = list(csv.DictReader(csvfile)) #打开csv
+x.keys() #表头
+x.append(a) #列表末尾添加元素
+dt.datetime.fromtimestamp(tm.time()).year #当前年(datetime as dt, time as tm)
+dt.timedelta(days = 100) # 100天，可与时间加减
+map(fun, iter) # 循环列表执行函数
+x.shape # x的(行, 列)
+numpy.arange(start, stop, step, dtype) #创建一个间隔为step的1维数组ndarray
+np.linspace(0, 4, 9) # 生成9个元素的等差ndarray
+x.reshape(3, 5) # 返回重排列的数组
+x.rasize(3, 5) # 直接改变数据x的排列
+np.repeat([1,2,3],3) #数组每个元素按顺序扩展到3个
+np.vstack([p, 2*p]) #对应行连接
+np.hstack([p, 2*p]) #对应列连接
+z = z.astype('f') #改变数据类型
+z.stype() #返回数据类型
+a.argmax()  #返回最大值索引
+s[-5::-2] #返回索引从-5开始-2的数
+r[-1, ::2] #返回-1行，索引从0开始+2的数
+np.random.randint(0, 10, (4,3)) #生成范围0-10的int随机数组
+zip(a,b) #把a、b打包为元组的列表，类型为zip
+```
+## week2-pandas
+<iframe src="https://nbviewer.jupyter.org/github/leafzsy/leafzsy.github.io/blob/master/images/Introduction to Data Science in Python/week2_notes.ipynb" width="80%" height="600" marginheight="0" marginwidth="0" frameborder="0"></iframe>
+
+#### 函数记背小节二
 ```python
 %%timeit -n 100  # jupyter 中的测量代码块时间
 Series.iloc[3]  # 等同于 Series[3]
@@ -50,7 +59,8 @@ DataFrame.fillna(method='ffill')  # 向下传播值，补全nan
 DataFrame.fillna({'A': 0, 'B': 1, 'C': 2, 'D': 3}, limit=1)  #只补全第一行
 ```
 
-## pandas记背小节三
+###  pandas 作业2
+#### 记背小节三
 ```python
 df['Gold'].idxmax()  # 返回最大值index
 df['Points']  # 选取 'Points' 列
@@ -63,7 +73,10 @@ df7.max(axis = 1)  # 每行的最大值
 df8[df8['CTYNAME'].str.contains('Washington')]  # Series.str.contains(self, pat, case=True, flags=0, na=nan, regex=True) 包含string
 ```
 
-## pandas进阶记背小节四
+##  week3-pandas进阶
+<iframe src="https://nbviewer.jupyter.org/github/leafzsy/leafzsy.github.io/blob/master/images/Introduction to Data Science in Python/week3_notes.ipynb" width="80%" height="600" marginheight="0" marginwidth="0" frameborder="0"></iframe>
+
+#### 记背小节
 ```python
 #还原为数字索引
 df.reset_index()
@@ -117,10 +130,10 @@ df['2017']
 # 2016-12以后的
 df['2016-12':]
 # 按照间隔天数向下填充值
-df.asfreq(freq='6D', method='ffill'
+df.asfreq(freq='6D', method='ffill')
 ```
 
-## Assignment 3记背小节
+### Assignment 3记背小节
 ```python
 # skiprows 开始跳过行数; skipfooter 末尾跳过行数
 energy = pd.read_excel("Energy Indicators.xls",skiprows = 18,usecols =[2,3,4,5],header = None,skipfooter = 38,
@@ -136,7 +149,10 @@ Top15['continent'] = pd.Series(ContinentDict)
 Top15['PopEst'].map(lambda x:format(x,','))
 ```
 
-## week4 记背小节
+## week4-Distributions in Pandas
+ [week4](https://github.com/leafzsy/leafzsy.github.io/blob/master/images/Introduction%20to%20Data%20Science%20in%20Python/Week_4.ipynb)
+
+#### week4 记背小节
 ```python
 #二项式分布 np.random.binomial(n, p, size) 
 np.random.binomial(1, 0.01,200) 
@@ -156,7 +172,7 @@ stats.skew(distribution)
 stats.ttest_ind(early['assignment1_grade'], late['assignment1_grade'])
 
 ```
-## Assignment 4记背小节
+#### Assignment 4记背小节
 ```python
 # 读取txt
 file = open('university_towns.txt','r',encoding='utf-8')
@@ -164,4 +180,29 @@ ut = file.readlines()
 # 创建循环日期
 pd.period_range(start = '2000-01',end = '2016-06',freq = '3M')
 ```
+
+### cs231n notes
+
+```python
+##多维转一维
+x.flatten()
+
+##排名索引
+numpy.argsort(x)
+
+##前k个
+x[:k]
+
+##0到max的计数
+numpy.bincount(x)
+
+##max的索引
+numpy.argmax(x)
+
+##每个的平方
+x ** 2
+numpy.square(x)
+
+##矩阵点乘
+numpy.dot(x,y)
 ```

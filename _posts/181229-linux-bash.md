@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "ubuntu bash"
+title:  "linux bash"
 date:   2018-12-29 22:18
 comments: true
 tag:
-- ubuntu
+- linux
 - notes
 ---
 
