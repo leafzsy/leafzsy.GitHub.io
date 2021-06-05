@@ -541,7 +541,7 @@ name varchar(20) not null,
 unique(budget)
 ```
 ### check(P)
-```SQL
+```sql
 check(budget>0),
 check(semester in ('fall','winter','spring','summer'))
 ```
