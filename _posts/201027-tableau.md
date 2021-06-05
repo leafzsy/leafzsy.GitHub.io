@@ -2,6 +2,7 @@
 layout: post
 title:  "Data Visualization and Communication with Tableau"
 date:   2020-10-27 16:22
+description: from "https://www.coursera.org"
 comments: true
 tag:
 - Tableau

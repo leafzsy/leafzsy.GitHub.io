@@ -11,7 +11,6 @@ tag:
 ## blog biulding
 ```bash
 bundle exec jekyll serve 
-
 ```
 
 ## git

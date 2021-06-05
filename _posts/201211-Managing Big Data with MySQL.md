@@ -2,6 +2,7 @@
 layout: post
 title:  "Managing Big Data with MySQL"
 date:   2020-12-11 17:02
+description: from "https://www.coursera.org"
 comments: true
 tag:
 - sql
